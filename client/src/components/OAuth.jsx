@@ -24,7 +24,6 @@ function OAuth() {
         const data = await res.data;
         dispatch(signInSuccess(data));
         navigate('/');
-        console.log(result)
       }catch(err){
         console.log('could not sign in with google', err);
       }
